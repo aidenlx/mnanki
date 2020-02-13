@@ -7,6 +7,17 @@
 //
 
 import Foundation
+if (CommandLine.argc>1){
+        switch CommandLine.arguments[1] {
+        case "link":
+            print("link")
+            link();
+        case "cell":
+            print("cell")
+            cell();
+        default:
+            print("Unknown Agrument")
+        }
+}else{            print("Missing Agrument")}
 
-print("Hello, World!")
 
